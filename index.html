@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Detector de Carros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+<body>
+        <div class="container" style="text-align: center">
+          <header class="jumbotron" style="background-color: #9e2f35; color: white">
+            <h1>Sistema de Detecção de Carros</h1>
+            <p>Carros, motos ou fórmula 1</p>
+          </header>
+          <h2>Carro de corrida</h2>
+          <p>
+            Carros usados em corridas. Pode ser tanto um carro esportivo , quanto uma motocicleta ou uma fórmula 1
+          </p>
+          <button type="button" class="btn btn-primary" onclick="init()">
+            Iniciar Reconhecimento
+          </button>
+          <div id="webcam-container"></div>
+          <div class="display-4" id="label-container"></div>
+    
+          <footer
+            class="panel-footer"
+            style="text-align: center; background-color: #9e2f35; color: white"
+          >
+            Todos direitos reservados - Enrico e Ronaldo - IFSULDEMINAS -
+            Campus Machado
+          </footer>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="tensor.js"></script>
+</body>
+</html>
